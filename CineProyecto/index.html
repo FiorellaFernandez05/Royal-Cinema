@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cinema - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS para el carrusel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- MARQUESINA -->
+    <div class="marquesina">
+        <span class="marquesina-contenido">
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="logo-nav">ROYAL CINEMA</a></li>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="dulceria.html">Dulceria</a></li>
+            <li><a href="salas.html">Salas</a></li>
+            <li><a href="boleteria.html">Boleteria</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="metodos-pago.html">Metodos de Pago</a></li>
+            <li><a href="login.html">Registro / Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>ROYAL CINEMA</h1>
+    </div>
+
+    <!-- CARRUSEL TOP 5 PELICULAS EN CARTELERA -->
+    <div class="seccion-carrusel">
+        <h2>Top 5 en Cartelera</h2>
+
+        <div id="carruselPeliculas" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselPeliculas" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carruselPeliculas" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carruselPeliculas" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carruselPeliculas" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carruselPeliculas" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner" style="background-color: #05204a; border: 1px solid #cdaa80; border-radius: 6px;">
+
+                <!-- Pelicula 1: Accion -->
+                <div class="carousel-item active">
+                    <!-- IMAGEN: Poster de pelicula de accion (ej. John Wick, Mad Max, etc.) -->
+                    <img src="https://th.bing.com/th/id/R.eb4e17c025153a3a44e6369c11e00da6?rik=drknu5wJzsww4g&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2015%2f03%2fmad-max-fury-road-poster-1.jpg&ehk=FBodqf2D2wTgdU8Q9QKtrjCVrwCqpKeig7PkhPZ8h7o%3d&risl=&pid=ImgRaw&r=0"
+                         class="d-block w-100" alt="Mad Max: Fury Road">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(5,32,74,0.8); border-radius: 4px;">
+                        <h5 style="color: #cdaa80;">Mad Max: Fury Road</h5>
+                        <p>Accion | Salas 2D, 3D, IMAX</p>
+                    </div>
+                </div>
+
+                <!-- Pelicula 2: Comedia -->
+                <div class="carousel-item">
+                    <!-- IMAGEN: Poster de pelicula de comedia (ej. Ted, Supercool, etc.) -->
+                    <img src="https://mx.web.img3.acsta.net/pictures/19/03/20/19/26/1988298.jpg"
+                         class="d-block w-100" alt="Pelicula de comedia">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(5,32,74,0.8); border-radius: 4px;">
+                        <h5 style="color: #cdaa80;">Pelicula de Comedia</h5>
+                        <p>Comedia | Salas 2D</p>
+                    </div>
+                </div>
+
+                <!-- Pelicula 3: Drama -->
+                <div class="carousel-item">
+                    <!-- IMAGEN: Poster de pelicula de drama (ej. Forrest Gump, Titanic, etc.) -->
+                    <img src="https://media.themoviedb.org/t/p/w500/1Esw7HZUmHzDeJIZq4ZmTZrhunT.jpg"
+                         class="d-block w-100" alt="Pelicula de drama">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(5,32,74,0.8); border-radius: 4px;">
+                        <h5 style="color: #cdaa80;">Pelicula de Drama</h5>
+                        <p>Drama | Salas 2D, 3D</p>
+                    </div>
+                </div>
+
+                <!-- Pelicula 4: Ciencia Ficcion -->
+                <div class="carousel-item">
+                    <!-- IMAGEN: Poster de pelicula de ciencia ficcion (ej. Avatar, Duna, Matrix, etc.) -->
+                    <img src="https://resumenpelicula.com/wp-content/uploads/2023/04/avatar.jpg"
+                         class="d-block w-100" alt="Avatar">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(5,32,74,0.8); border-radius: 4px;">
+                        <h5 style="color: #cdaa80;">Avatar</h5>
+                        <p>Ciencia Ficcion | Salas 3D, IMAX</p>
+                    </div>
+                </div>
+
+                <!-- Pelicula 5: Documental -->
+                <div class="carousel-item">
+                    <!-- IMAGEN: Poster de documental (ej. Cosmos, Planeta Tierra, etc.) -->
+                    <img src="https://pics.filmaffinity.com/cosmos-789065797-large.jpg"
+                         class="d-block w-100" alt="Cosmos">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(5,32,74,0.8); border-radius: 4px;">
+                        <h5 style="color: #cdaa80;">Cosmos</h5>
+                        <p>Documental | Sala 2D</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPeliculas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPeliculas" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- UBICACION -->
+    <div class="seccion">
+        <h2 id="Ubicacion">Ubicacion</h2>
+        <a href="#Ubicacion" style="color: #cdaa80; display: block; text-align: center; margin-bottom: 15px;">Ir a ubicacion</a>
+        <div class="mapa-contenedor">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3!2d-84.0!3d9.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTEnMDAuMCJOIDg0wrAwMCcwMC4wIlc!5e0!3m2!1ses!2scr!4v1"
+                title="Ubicacion Royal Cinema Aserrí"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+        <p style="text-align: center; font-size: 13px; color: #ccc; margin-top: 10px;">Aserrí, San Jose, Costa Rica</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-columna">
+                <h4>Royal Cinema</h4>
+                <p>Cadena de cines en Costa Rica</p>
+                <p>La mejor experiencia cinematografica</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Ubicacion</h4>
+                <p>Aserrí, San Jose</p>
+                <p>Terramall</p>
+                <p>Multiplaza Escazu</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Contacto</h4>
+                <p>Tel: (506) 2222-0000</p>
+                <a href="contactos.html">Formulario de contacto</a>
+            </div>
+            <div class="footer-columna">
+                <h4>Redes Sociales</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            &copy; 2025 Royal Cinema. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
