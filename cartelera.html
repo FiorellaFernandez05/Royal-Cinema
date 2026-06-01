@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cinema - Cartelera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MARQUESINA -->
+    <div class="marquesina">
+        <span class="marquesina-contenido">
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="logo-nav">ROYAL CINEMA</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cartelera.html" class="activo">Cartelera</a></li>
+            <li><a href="dulceria.html">Dulceria</a></li>
+            <li><a href="salas.html">Salas</a></li>
+            <li><a href="boleteria.html">Boleteria</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="metodos-pago.html">Metodos de Pago</a></li>
+            <li><a href="login.html">Registro / Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="seccion">
+        <h2>Cartelera</h2>
+
+        <!-- FILTROS POR CATEGORIA -->
+        <div class="categorias">
+            <button class="btn-categoria activo" onclick="mostrarGenero('todos', this)">Todos</button>
+            <button class="btn-categoria" onclick="mostrarGenero('estreno', this)">Peliculas en Estreno</button>
+            <button class="btn-categoria" onclick="mostrarGenero('terror', this)">Terror</button>
+            <button class="btn-categoria" onclick="mostrarGenero('comedia', this)">Comedia</button>
+            <button class="btn-categoria" onclick="mostrarGenero('drama', this)">Drama</button>
+            <button class="btn-categoria" onclick="mostrarGenero('accion', this)">Accion</button>
+            <button class="btn-categoria" onclick="mostrarGenero('documental', this)">Documental</button>
+            <button class="btn-categoria" onclick="mostrarGenero('ciencia-ficcion', this)">Ciencia Ficcion</button>
+        </div>
+
+        <!-- ===== TERROR ===== -->
+        <div class="grupo-genero" data-genero="terror">
+            <h3>Terror</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de El Exorcista - genero Terror -->
+                    <div class="img-placeholder"><img src="/imgs/El_exorcista-352751982-large.jpg" alt="El Exorcista-IMG"></div>
+                    <h4>El Exorcista</h4>
+                    <p>Sala: 2D | Horarios: 7pm, 9pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de It - genero Terror -->
+                    <div class="img-placeholder"><img src="/imgs/it.webp" alt="IT-img"></div>
+                    <h4>It</h4>
+                    <p>Sala: 2D | Horarios: 6pm, 8pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de La Monja - genero Terror -->
+                    <div class="img-placeholder"> <img src="/imgs/La monja.jpg" alt="La monja-IMG"></div>
+                    <h4>La Monja</h4>
+                    <p>Sala: 3D | Horarios: 7:30pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN Poster de Halloween - genero Terror -->
+                    <div class="img-placeholder"><img src="/imgs/Halloween.jpg" alt="Halloween-IMG"></div>
+                    <h4>Halloween</h4>
+                    <p>Sala: 2D | Horarios: 8pm, 10pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de El Conjuro - genero Terror -->
+                    <div class="img-placeholder"><img src="/imgs/conjuro.webp" alt="conjuro-IMG"></div>
+                    <h4>El Conjuro</h4>
+                    <p>Sala: 2D | Horarios: 7pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== COMEDIA ===== -->
+        <div class="grupo-genero" data-genero="comedia">
+            <h3>Comedia</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Ted - genero Comedia -->
+                    <div class="img-placeholder"><img src="/imgs/ted.jpg" alt="Ted-IMG"></div>
+                    <h4>Ted</h4>
+                    <p>Sala: 2D | Horarios: 4pm, 6pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Supercool - genero Comedia -->
+                    <div class="img-placeholder"><img src="/imgs/SPC.jpg" alt="Supercool-IMG"></div>
+                    <h4>Supercool</h4>
+                    <p>Sala: 2D | Horarios: 5pm, 7pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="img-placeholder"><img src="/imgs/LE.webp" alt="Ligeramente Embarazada-IMG"></div>
+                    <h4>Ligeramente Embarazada</h4>
+                    <p>Sala: 2D | Horarios: 6pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="img-placeholder"><img src="/imgs/NM.jpg" alt="Noche en el Museo-IMG"></div>
+                    <h4>Una Noche en el Museo</h4>
+                    <p>Sala: 2D | Horarios: 4pm, 6pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEn - Poster de Grown Ups - genero Comedia -->
+                    <div class="img-placeholder"><img src="/imgs/CN.webp" alt="Grown Ups-IMG"></div>
+                    <h4>Grown Ups</h4>
+                    <p>Sala: 2D | Horarios: 5:30pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== DRAMA ===== -->
+        <div class="grupo-genero" data-genero="drama">
+            <h3>Drama</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Forrest Gump - genero Drama -->
+                    <div class="img-placeholder"><img src="/imgs/FG.jpg" alt="Forrest Gump-IMG"></div>
+                    <h4>Forrest Gump</h4>
+                    <p>Sala: 2D | Horarios: 3pm, 7pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Titanic - genero Drama -->
+                    <div class="img-placeholder"><img src="/imgs/Titanic.jpg" alt="Titanic-IMG"></div>
+                    <h4>Titanic</h4>
+                    <p>Sala: 3D | Horarios: 5pm, 9pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de  El Padrino - genero Drama -->
+                    <div class="img-placeholder"><img src="/imgs/ELP.webp" alt="El Padrino-IMG"></div>
+                    <h4>El Padrino</h4>
+                    <p>Sala: 2D | Horarios: 7pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN -  Poster de Gladiador - genero Drama -->
+                    <div class="img-placeholder"><img src="/imgs/ELG.jpg" alt="El Gladiador"></div>
+                    <h4>Gladiador</h4>
+                    <p>Sala: 3D | Horarios: 6pm, 9pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de La Lista de Schindler - genero Drama -->
+                    <div class="img-placeholder"><img src="/imgs/LLE.jpg" alt="La lista de Schindler-IMG"></div>
+                    <h4>La Lista de Schindler</h4>
+                    <p>Sala: 2D | Horarios: 4pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== ACCION ===== -->
+        <div class="grupo-genero" data-genero="accion">
+            <h3>Accion</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de John Wick - genero Accion -->
+                    <div class="img-placeholder"><img src="/imgs/JW.webp" alt="John Wick-IMG"></div>
+                    <h4>John Wick</h4>
+                    <p>Sala: 2D, 3D | Horarios: 6pm, 8pm, 10pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Rapidos y Furiosos - genero Accion -->
+                    <div class="img-placeholder"><img src="/imgs/RF.jpg" alt="Rapidos y Furiosos-IMG"></div>
+                    <h4>Rapidos y Furiosos</h4>
+                    <p>Sala: IMAX | Horarios: 7pm, 9pm</p>
+                    <p class="precio">Desde &#8353;6,000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Mision Imposible - genero Accion -->
+                    <div class="img-placeholder"><img src="/imgs/MI.jpg" alt="Mision Imposible-IMG"></div>
+                    <h4>Misión Imposible</h4>
+                    <p>Sala: 3D | Horarios: 7:30pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Mad Max: Fury Road - genero Accion -->
+                    <img src="https://th.bing.com/th/id/R.eb4e17c025153a3a44e6369c11e00da6?rik=drknu5wJzsww4g&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2015%2f03%2fmad-max-fury-road-poster-1.jpg&ehk=FBodqf2D2wTgdU8Q9QKtrjCVrwCqpKeig7PkhPZ8h7o%3d&risl=&pid=ImgRaw&r=0" alt="Mad Max: Fury Road">
+                    <h4>Mad Max: Fury Road</h4>
+                    <p>Sala: IMAX | Horarios: 8pm</p>
+                    <p class="precio">Desde &#8353;6,000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de The Dark Knight - genero Accion -->
+                    <div class="img-placeholder"><img src="/imgs/Batman.webp" alt="El caballero Oscuro-IMG"></div>
+                    <h4>El Caballero Oscuro</h4>
+                    <p>Sala: 3D | Horarios: 7pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== DOCUMENTAL ===== -->
+        <div class="grupo-genero" data-genero="documental">
+            <h3>Documental</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Planeta Tierra - genero Documental -->
+                    <div class="img-placeholder"><img src="/imgs/PT.webp" alt="Planeta Tierra-IMG"></div>
+                    <h4>Planeta Tierra</h4>
+                    <p>Sala: 2D | Horarios: 3pm, 5pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Cosmos - genero Documental -->
+                    <img src="/imgs/Cosmos.jpg" alt="Cosmos">
+                    <h4>Cosmos</h4>
+                    <p>Sala: 2D | Horarios: 4pm, 6pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de El Dilema de las Redes - genero Documental -->
+                    <div class="img-placeholder"><img src="/imgs/EDLRS.jpg" alt="El Dilema de las Redes-IMG"></div>
+                    <h4>El Dilema de las Redes</h4>
+                    <p>Sala: 2D | Horarios: 5pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Nuestro Planeta - genero Documental -->
+                    <div class="img-placeholder"><img src="/imgs/OP.jpg" alt="Nuestro Planeta-IMG"></div>
+                    <h4>Nuestro Planeta</h4>
+                    <p>Sala: 2D | Horarios: 3:30pm, 5:30pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Inside Job - genero Documental -->
+                    <div class="img-placeholder"><img src="/imgs/IJ.webp" alt="Inside Job-IMG"></div>
+                    <h4>Inside Job</h4>
+                    <p>Sala: 2D | Horarios: 6pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== CIENCIA FICCION ===== -->
+        <div class="grupo-genero" data-genero="ciencia-ficcion">
+            <h3>Ciencia Ficcion</h3>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Matrix - genero Ciencia Ficcion -->
+                    <div class="img-placeholder"><img src="/imgs/matrix.webp" alt="Matrix-IMG"></div>
+                    <h4>Matrix</h4>
+                    <p>Sala: 3D | Horarios: 6pm, 9pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Star Wars - genero Ciencia Ficcion -->
+                    <div class="img-placeholder"><img src="/imgs/SW.webp" alt="Star Wars-IMG"></div>
+                    <h4>Star Wars</h4>
+                    <p>Sala: IMAX | Horarios: 7pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;6,000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Blade Runner - genero Ciencia Ficcion -->
+                    <div class="img-placeholder"><img src="/imgs/BR.webp" alt="Blade Runner-IMG"></div>
+                    <h4>Blade Runner</h4>
+                    <p>Sala: 2D | Horarios: 8pm</p>
+                    <p class="precio">Desde &#8353;3,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN - Poster de Avatar - genero Ciencia Ficcion -->
+                    <img src="https://resumenpelicula.com/wp-content/uploads/2023/04/avatar.jpg" alt="Avatar">
+                    <h4>Avatar</h4>
+                    <p>Sala: 3D, IMAX | Horarios: 5pm, 8pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN- Poster de Duna - genero Ciencia Ficcion -->
+                    <div class="img-placeholder"><img src="/imgs/Dune.webp" alt="Dune-IMG"></div>
+                    <h4>Duna</h4>
+                    <p>Sala: IMAX | Horarios: 6:30pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;6,000</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== EN ESTRENO ===== -->
+        <div class="grupo-genero" data-genero="estreno">
+            <h3>Peliculas en Estreno</h3>
+            <div class="aviso">Estas peliculas se encuentran en su primera semana en cartelera. Aproveche la oferta 2x1.</div>
+            <div class="tarjetas-grid">
+
+                <div class="tarjeta">
+                    <!-- IMAGEN- Poster de pelicula en estreno  -->
+                    <div class="img-placeholder"><img src="/imgs/BackRooms.webp" alt="BackRooms-IMG"></div>
+                    <h4>Titulo en Estreno</h4>
+                    <p>Sala: IMAX | Horarios: 7pm, 9:30pm</p>
+                    <p class="precio">Desde &#8353;6,000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- IMAGEN- Poster de pelicula en estreno  -->
+                    <div class="img-placeholder"><img src="/imgs/MK2.webp" alt="Mortal kombat 2-IMG"></div>
+                    <h4>Titulo en Estreno</h4>
+                    <p>Sala: 3D | Horarios: 6pm, 8:30pm</p>
+                    <p class="precio">Desde &#8353;4,500</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-columna">
+                <h4>Royal Cinema</h4>
+                <p>Cadena de cines en Costa Rica</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Ubicacion</h4>
+                <p>Aserrí, San Jose</p>
+                <p>Terramall | Multiplaza Escazu</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Contacto</h4>
+                <p>Tel: (506) 2222-0000</p>
+                <a href="contactos.html">Formulario de contacto</a>
+            </div>
+            <div class="footer-columna">
+                <h4>Redes Sociales</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            &copy; 2025 Royal Cinema. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        function mostrarGenero(genero, boton) {
+            // Actualizar boton activo
+            document.querySelectorAll('.btn-categoria').forEach(function(btn) {
+                btn.classList.remove('activo');
+            });
+            boton.classList.add('activo');
+
+            // Mostrar u ocultar grupos
+            document.querySelectorAll('.grupo-genero').forEach(function(grupo) {
+                if (genero === 'todos' || grupo.dataset.genero === genero) {
+                    grupo.style.display = 'block';
+                } else {
+                    grupo.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cinema - Registro / Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MARQUESINA -->
+    <div class="marquesina">
+        <span class="marquesina-contenido">
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            OFERTA 2X1 EN TODAS LAS FUNCIONES ESTA SEMANA &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="logo-nav">ROYAL CINEMA</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cartelera.html">Cartelera</a></li>
+            <li><a href="dulceria.html">Dulceria</a></li>
+            <li><a href="salas.html">Salas</a></li>
+            <li><a href="boleteria.html">Boleteria</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="metodos-pago.html">Metodos de Pago</a></li>
+            <li><a href="login.html" class="activo">Registro / Login</a></li>
+        </ul>
+    </nav>
+
+    <p class="titulo-pagina">Registro / Login</p>
+
+    <div class="auth-contenedor">
+
+        <!-- LOGIN -->
+        <div class="auth-caja">
+            <h2>Iniciar Sesion</h2>
+
+            <p style="text-align: center; font-size: 13px; color: #aaa; margin-bottom: 15px;">
+                Maximo 3 intentos fallidos antes de bloquear la cuenta temporalmente.
+            </p>
+
+            <label for="usuario-login">Usuario</label>
+            <input type="text" id="usuario-login" name="usuario" placeholder="Su usuario o correo">
+
+            <label for="contrasena-login">Contraseña</label>
+            <input type="password" id="contrasena-login" name="contrasena" placeholder="Su contraseña">
+
+            <button type="button" class="btn-principal" onclick="iniciarSesion()">Ingresar</button>
+
+            <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #aaa;">
+                <a href="#" style="color: #cdaa80;" onclick="mostrarRecuperacion()">Olvide mi contraseña</a>
+            </p>
+        </div>
+
+        <!-- REGISTRO -->
+        <div class="auth-caja">
+            <h2>Crear Cuenta</h2>
+
+            <label for="nombre-registro">Nombre</label>
+            <input type="text" id="nombre-registro" name="nombre" placeholder="Su nombre completo">
+
+            <label for="correo-registro">Correo Electronico</label>
+            <input type="email" id="correo-registro" name="correo" placeholder="correo@ejemplo.com">
+
+            <label for="telefono-registro">Numero de Telefono</label>
+            <input type="tel" id="telefono-registro" name="telefono" placeholder="(506) 0000-0000">
+
+            <label for="contraseña-registro">Contraseña</label>
+            <input type="password" id="contrasena-registro" name="contrasena" placeholder="Cree una contraseña">
+
+            <button type="button" class="btn-principal" onclick="registrar()">Registrarme</button>
+
+            <p style="text-align: center; margin-top: 15px; font-size: 12px; color: #aaa;">
+                Al registrarse, sera redirigido al inicio de sesion.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- SECCION RECUPERACION -->
+    <div id="seccion-recuperacion" style="display: none; padding: 20px; max-width: 400px; margin: 0 auto;">
+        <div class="formulario">
+            <h3 style="color: #cdaa80; text-align: center; margin-bottom: 15px;">Recuperar Contraseña</h3>
+            <label for="correo-recuperacion">Correo Electronico</label>
+            <input type="email" id="correo-recuperacion" name="correo" placeholder="Ingrese su correo registrado">
+            <button type="button" class="btn-principal" onclick="alert('Se ha enviado un enlace de recuperacion a su correo.')">Enviar Enlace</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-columna">
+                <h4>Royal Cinema</h4>
+                <p>Cadena de cines en Costa Rica</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Ubicacion</h4>
+                <p>Aserrí, San Jose</p>
+                <p>Terramall | Multiplaza Escazu</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Contacto</h4>
+                <p>Tel: (506) 2222-0000</p>
+                <a href="contactos.html">Formulario de contacto</a>
+            </div>
+            <div class="footer-columna">
+                <h4>Redes Sociales</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            &copy; 2025 Royal Cinema. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        var intentos = 0;
+
+        function iniciarSesion() {
+            var usuario = document.getElementById('usuario-login').value;
+            var contrasena = document.getElementById('contrasena-login').value;
+
+            if (!usuario || !contrasena) {
+                alert('Por favor complete todos los campos.');
+                return;
+            }
+
+            intentos++;
+
+            if (intentos >= 3) {
+                alert('Cuenta bloqueada temporalmente por multiples intentos fallidos. Intente mas tarde.');
+                return;
+            }
+
+            // Simulacion: usuario demo / contrasena demo
+            if (usuario === 'demo' && contrasena === 'demo') {
+                intentos = 0;
+                alert('Inicio de sesion exitoso. Bienvenido.');
+                window.location.href = 'index.html';
+            } else {
+                alert('Usuario o contrasena incorrectos. Intento ' + intentos + ' de 3.');
+            }
+        }
+
+        function registrar() {
+            var nombre = document.getElementById('nombre-registro').value;
+            var correo = document.getElementById('correo-registro').value;
+            var telefono = document.getElementById('telefono-registro').value;
+            var contrasena = document.getElementById('contrasena-registro').value;
+
+            if (!nombre || !correo || !telefono || !contrasena) {
+                alert('Por favor complete todos los campos.');
+                return;
+            }
+
+            alert('Cuenta creada exitosamente. Por favor inicie sesion.');
+        }
+
+        function mostrarRecuperacion() {
+            var seccion = document.getElementById('seccion-recuperacion');
+            if (seccion.style.display === 'none') {
+                seccion.style.display = 'block';
+            } else {
+                seccion.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
